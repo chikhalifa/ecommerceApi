@@ -462,7 +462,7 @@ class ComposerStaticInit6cf4749af00d1ba421dcc80620a6cf40
         ),
         'Database\\Seeders\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/database/Seeders',
+            0 => __DIR__ . '/../..' . '/database/seeders',
         ),
         'Database\\Factories\\' => 
         array (

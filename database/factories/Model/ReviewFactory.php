@@ -1,7 +1,7 @@
 <?php
 
 namespace Database\Factories\Model;
-namespace App\Models\Model;
+//namespace App\Models\Model;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class ReviewFactory extends Factory
@@ -15,7 +15,7 @@ class ReviewFactory extends Factory
     {
         return [
             'product_id'=>function(){
-                return Product::all()->random();
+                return \App\Models\Model\Product::all()->random();
             },
             'customer'=>$this->faker->name(),
             'review'=>$this->faker->paragraph(),
@@ -25,4 +25,5 @@ class ReviewFactory extends Factory
         ];
 
     }
+    
 }
