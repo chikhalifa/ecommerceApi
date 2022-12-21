@@ -7,5 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Review extends Model
 {
-    use HasFactory;
+    //use HasFactory;
+    public function names(){
+        return $this->belongsTo(Product::class);
+    }
 }
